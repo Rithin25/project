@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<style>
+.b {
+  margin-right: 30px;
+  margin-left: 30px;
+  white-space: pre;
+}
+p.f {
+  white-space: pre;
+}
+textarea { 
+  width: 100%; 
+  margin: 0; 
+  padding: 0; 
+  border-width: 0; 
+  }
+.a {
+
+  margin-right: 30px;
+  margin-left: 30px;
+
+}
+.d
+{
+  margin-left: 33px;
+}
+.c {
+
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.v {
+
+  margin-right: 30px;
+  margin-left: 40px;
+}
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+</style>
+
+</head>
+<body style="background-color:rgb(248,248,248);">
+  
+<div style="background-color:rgb(255,255,255);" class="c">
+<h4><b>Stack implementation</b></h4><hr class="solid">
+<i class="fas fa-caret-square-up"></i> 124  <i class="fas fa-caret-square-down"></i>
+<div class="b">
+Read the Prefix expression in reverse order (from right to left)
+If the symbol is an operand, then push it onto the Stack
+If the symbol is an operator, then pop two operands from the Stack 
+Create a string by concatenating the two operands and the operator between them. 
+string = (operand1 + operator + operand2) 
+And push the resultant string back to Stack
+Repeat the above steps until end of Prefix expression.
+
+</div>
+
+<div  style="background-color:rgb(248,248,248);" class="b">
+  // C++ Program to convert prefix to Infix
+#include <iostream>
+#include <stack>
+using namespace std;
+
+// function to check if character is operator or not
+bool isOperator(char x) {
+switch (x) {
+case '+':
+case '-':
+case '/':
+case '*':
+	return true;
+}
+return false;
+}
+
+// Convert prefix to Infix expression
+string preToInfix(string pre_exp) {
+stack<string> s;
+
+// length of expression
+int length = pre_exp.size();
+
+// reading from right to left
+for (int i = length - 1; i >= 0; i--) {
+
+	// check if symbol is operator
+	if (isOperator(pre_exp[i])) {
+
+	// pop two operands from stack
+	string op1 = s.top(); s.pop();
+	string op2 = s.top(); s.pop();
+
+	// concat the operands and operator
+	string temp = "(" + op1 + pre_exp[i] + op2 + ")";
+
+	// Push string temp back to stack
+	s.push(temp);
+	}
+
+	// if symbol is an operand
+	else {
+
+	// push the operand to the stack
+	s.push(string(1, pre_exp[i]));
+	}
+}
+
+// Stack now contains the Infix expression
+return s.top();
+}
+
+// Driver Code
+int main() {
+string pre_exp = "*-A/BC-/AKL";
+cout << "Infix : " << preToInfix(pre_exp);
+return 0;
+}
+</div>
+<div class="b">
+  The .container class provides a responsive fixed width container.
+  Resize the browser window to see that its width (max-width) will change at different breakpoints.
+
+</div>
+
+</div>
+
+<div style="background-color:rgb(245,245,245);" class="a">
+<h4>Comments</h4>
+<textarea name="message" rows="7" placeholder="Type your comment here"></textarea>
+<br>
+
+<button type="button" class="btn btn-outline-secondary" style="float : right">Comment</button>
+</div>
+
+<br>
+<br>
+<div style="background-color:rgb(255,255,255);" class="c">
+<span class=nobr><img src="2.jpg" class="rounded-circle" alt="Cinque Terre" width="30" height="30"> <b> Rithin rao</b>
+</span>
+<div class="d">
+
+<p> This is the best code I 've seen As you can see, flag and telephone number are in separate lines. The &nbsp; are working in between the numbers of the telephone number, but not between flag and telephone number.
+
+How can I make sure that no line-break at all is introduced by the renderer?</p>
+<p class="f"><i class="fas fa-caret-square-up"></i> 124  <i class="fas fa-caret-square-down"></i>       <i class="fas fa-reply"></i> Reply</p>
+
+<button type="button" class="btn btn-outline-light text-dark" style="color:blue ;   white-space: pre;"><i class="fas fa-sort-up"></i>    <b>hide reply</b></button>
+
+
+</div>
+<br>
+
+<div style="background-color:rgb(255,255,255);" class="v">
+
+<span class=nobr><img src="1.jpg" class="rounded-circle" alt="Cinque Terre" width="30" height="30"> <b> Hemanth Ternati</b>
+</span>
+<div class="d">
+
+<p> This is the best code I 've seen As you can see, flag and telephone number are in separate lines. The &nbsp; are working 
+in between the numbers of the telephone number, but not between flag and telephone number.
+
+How can I make sure that no line-break at all is introduced by the renderer?</p>
+<p class="f"><i class="fas fa-caret-square-up"></i> 124  <i class="fas fa-caret-square-down"></i>       <i class="fas fa-reply"></i> Reply</p>
+
+
+</div>
+</div>
+
+
+<br>
+
+<span class=nobr><img src="1.jpg" class="rounded-circle" alt="Cinque Terre" width="30" height="30"> <b> Ankit reddy</b>
+</span>
+<div class="d">
+
+<p> This is the best code I 've seen As you can see, flag and telephone number are in separate lines. The &nbsp; are working 
+in between the numbers of the telephone number, but not between flag and telephone number.
+
+How can I make sure that no line-break at all is introduced by the renderer?</p>
+<p class="f"><i class="fas fa-caret-square-up"></i> 124  <i class="fas fa-caret-square-down"></i>       <i class="fas fa-reply"></i> Reply</p>
+
+<button type="button" class="btn btn-outline-light text-dark" style="color:blue ;   white-space: pre;"><i class="fas fa-sort-down"></i>    <b>view 2 replies</b></button>
+
+
+</div>
+
+
+
+<br>
+<span class=nobr><img src="1.jpg" class="rounded-circle" alt="Cinque Terre" width="30" height="30"> <b> Akash kothi</b>
+</span>
+<div class="d">
+
+<p> This is the best code I 've seen As you can see, flag and telephone number are in separate lines. The &nbsp; are working 
+in between the numbers of the telephone number, but not between flag and telephone number.
+
+How can I make sure that no line-break at all is introduced by the renderer?</p>
+<p class="f"><i class="fas fa-caret-square-up"></i> 124  <i class="fas fa-caret-square-down"></i>       <i class="fas fa-reply"></i> Reply</p>
+
+<button type="button" class="btn btn-outline-light text-dark" style="color:blue ;   white-space: pre;"><i class="fas fa-sort-down"></i>    <b>view 2 replies</b></button>
+
+
+</div>
+</body>
+</html>
