@@ -1,0 +1,30 @@
+.navbar{
+    padding: 3px 0;
+}
+.logo{
+    margin: 0 0 0 50px;
+}
+.menu-bar {
+    margin-right: 30px;
+}
+.btn {
+    margin-right : 10px; 
+}
+.seperator {
+    margin: 0;
+    color: #d2d4d6;
+}
+.add-question-btn{
+    padding: 8px 25px;
+    margin: 5px;
+    float: right;
+    outline: none;
+}
+.table>tbody>tr:nth-child(odd)>td, 
+.table>tbody>tr:nth-child(odd)>th {
+   background-color: rgba(245, 245, 245, 0.808); 
+ }
+.dropdown-item:active{
+    color: black;
+    background-color: #e9ecef;
+}

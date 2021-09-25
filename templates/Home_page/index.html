@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fb636de2b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>home_page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#">Code Organizer</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse menu-bar" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item notification"> 
+                  <button class="btn" type="button">
+                    <i class="far fa-bell"></i>
+                  </button>  
+                </li>
+              <li class="nav-item dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span><span><i class="far fa-user"></i>  user_name</span></span> 
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"> <span><i class="fas fa-user-graduate"></i></span> &nbsp Profile</a></li>
+                  <li><a class="dropdown-item" href="#"> <span><i class="far fa-heart"></i></span> &nbsp My Lists</a></li>
+                  <li><a class="dropdown-item" href="#"> <span><i class="fas fa-sign-out-alt"></i></span> &nbsp Sign out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr class="line dotted fav-list-hr seperator">
+      <button type="button" class="btn add-question-btn"> 
+        <span>
+          <i class="fas fa-heart" style = "color: rgb(194, 51, 51);"></i> 
+          &nbsp Add  Question
+        </span>
+      </button>
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Question</th>
+            <th scope="col">Difficulty</th>
+            <th scope="col">Solution</th>
+            <th scope="col">Privacy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
