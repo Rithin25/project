@@ -1,3 +1,14 @@
+
+a{
+    text-decoration: none;
+}
+
+td,th{
+    text-align: center;
+    justify-content: center;
+}
+
+
 .navbar{
     padding: 3px 0;
 }
@@ -8,6 +19,7 @@
     margin-right: 30px;
 }
 .btn {
+    position: relative;
     margin-right : 10px; 
 }
 .seperator {
@@ -15,16 +27,57 @@
     color: #d2d4d6;
 }
 .add-question-btn{
+    position: relative;
+    top : 150px;
+    right : 80px;
     padding: 8px 25px;
     margin: 5px;
     float: right;
     outline: none;
 }
+
 .table>tbody>tr:nth-child(odd)>td, 
 .table>tbody>tr:nth-child(odd)>th {
-   background-color: rgba(245, 245, 245, 0.808); 
+   background-color: #d2d4d618; 
  }
+
+
+.table{
+    width: 1000px;
+    position: relative;
+    left: 200px;
+    top : 100px;
+}
+
+.title{
+    color:  rgb(77, 189, 223);
+}
+
+.fa-file-alt{
+    color:#08c;
+}
+.fa-external-link-alt{
+    color: rgb(77, 189, 223);
+}
+
+.fa-lock , .fa-lock-open{
+    color: gray;
+}
+
+.fa-trash-alt{
+    color: rgb(214, 31, 31);
+    visibility:hidden;
+}
+
+.add-question-btn:hover{
+    background-color: #ecf0f1;
+}
 .dropdown-item:active{
     color: black;
-    background-color: #e9ecef;
+    background-color: #ecf0f1;
+    
+}
+
+tr:hover .fa-trash-alt{
+    visibility: visible;
 }
