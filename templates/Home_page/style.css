@@ -66,7 +66,6 @@ td , th {
 .topic-list{
     height: 150px;
     overflow-y: scroll;
-    
 }
 
 .fa-file-alt{
@@ -85,15 +84,49 @@ td , th {
     visibility:hidden;
 }
 
+.add-question-btn{
+    margin-bottom: 20px;
+}
+
 .add-question-btn:hover{
     background-color: #ecf0f1;
 }
 .dropdown-item:active{
     color: black;
     background-color: #ecf0f1;
-    
 }
+
+
+.user-handle{
+    margin-top: 30px;
+}
+
+.user-handle > .form-control{
+    border-radius: 5px;
+    width: 175px;
+    height: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.handle{
+    display: inline-block;
+    height: auto;
+    width: auto;
+    padding-left: 100px;
+    margin-top: 100px;
+}
+
 
 tr:hover .fa-trash-alt{
     visibility: visible;
+}
+
+.find{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
+    display: flex;
+    float: right;
+    
 }
