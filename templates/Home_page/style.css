@@ -34,18 +34,9 @@ td , th {
    background-color: #d2d4d618; 
  }
 
-.content{
-    display: inline-block;
-    margin-left: 250px;
-    margin-top: 100px;
-}
-
-.search-bar > .form-control{
+.search-bar{
     border-radius: 1020px;
-    width: 500px;
     height: 34px;
-    margin-right: 20px;
-    display: inline-block;
 }
 
 .topic-search{
@@ -54,15 +45,11 @@ td , th {
     width: 175px;
 }
 
-
-.search-bar{
-    display: inline-flex;
-    margin-bottom: 10px;
-}
 .title{
     color:  rgb(77, 189, 223);
     width: 450px;
 }
+
 .topic-list{
     height: 150px;
     overflow-y: scroll;
@@ -84,8 +71,8 @@ td , th {
     visibility:hidden;
 }
 
-.add-question-btn{
-    margin-bottom: 20px;
+.add-question{
+    margin-bottom: 17px;
 }
 
 .add-question-btn:hover{
@@ -96,27 +83,17 @@ td , th {
     background-color: #ecf0f1;
 }
 
-
 .user-handle{
     margin-top: 30px;
 }
+.user-search{
+    padding: 0px 0px 0px 12px;
+}
 
-.user-handle > .form-control{
-    border-radius: 5px;
-    width: 175px;
+.user-search > .form-control{
+    border-radius: 1000px;
     height: 30px;
-    margin-bottom: 10px;
-    display: inline-block;
 }
-
-.handle{
-    display: inline-block;
-    height: auto;
-    width: auto;
-    padding-left: 100px;
-    margin-top: 100px;
-}
-
 
 tr:hover .fa-trash-alt{
     visibility: visible;
@@ -126,7 +103,7 @@ tr:hover .fa-trash-alt{
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 50px;
+    margin-right: 0px;
     display: flex;
     float: right;
-    
 }
