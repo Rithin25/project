@@ -41,6 +41,7 @@ td , th {
 
 .topic-search{
     margin: 10px 30px 20px 10px;
+    border-radius: 10px;
     height: 34px;
     width: 175px;
 }
@@ -106,4 +107,7 @@ tr:hover .fa-trash-alt{
     margin-right: 0px;
     display: flex;
     float: right;
+}
+.find:hover{
+    background-color: #ecf0f1;    
 }
