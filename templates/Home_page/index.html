@@ -50,6 +50,7 @@
   <hr class="seperator">
 
   <div class="container" style="padding-top:100px; padding-left: 100px;">
+
     <div class="row">
       <div class="col-8 container">
         <div class="row" style="margin-bottom: 10px;">
@@ -209,12 +210,116 @@
       <div class="col-3  container" style="padding-right: 40px;">
         <div class="row add-question">
           <div class="col" style=" display: flex; align-items: center; justify-content: center;">
-            <button type="button" class="btn add-question-btn">
+            <button type="button" class="btn add-question-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               <span>
                 <i class="fas fa-heart" style="color: rgb(194, 51, 51);"></i>
                 &nbsp Add Question
               </span>
             </button>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"> <span class="gray"> Contibute Question </span>
+                    </h5>
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-5">
+                            <label for="title">
+                              <h5 class="gray">Title *</h5>
+                            </label>
+                            <br>
+                            <input type="text" id="title" class="form-control" name="title" placeholder="Pick a title"
+                              required>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6">
+                            <label for="topic">
+                              <h5 class="gray">Topic * </h5>
+                            </label>
+                            <br>
+                            <div class="d-flex flex-wrap">
+                              <div class="p-2 bd-highlight">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Array
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="p-2 bd-highlight">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Stack
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="p-2 bd-highlight">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Queue
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="p-2 bd-highlight">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Tree
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="p-2 bd-highlight">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Dynamic Programming
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="p-2 bd-highlight">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Linked List
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6">
+                            <label for="source">
+                              <h5 class="gray">Source *</h5>
+                            </label>
+                            <br>
+                            <input type="text" id="source" class="form-control" name="source"
+                              placeholder="Eg : https://leetcode.com/problems/array-nesting/" required>
+                          </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 0;">
+                          <div class="col d-flex flex-row justify-content-end bd-highlight">
+                            <div class="p-2 bd-highlight"><button type="button" class="btn btn-sm btn-danger"
+                                data-bs-dismiss="modal">Discard</button></div>
+                            <div class="p-2 bd-highlight"><button type="submit"
+                                class="btn btn-sm btn-success">Submit</button></div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <hr class="seperator">
@@ -230,4 +335,5 @@
     </div>
   </div>
 </body>
+
 </html>

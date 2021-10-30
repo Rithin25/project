@@ -79,6 +79,23 @@ td , th {
 .add-question-btn:hover{
     background-color: #ecf0f1;
 }
+.gray{
+    color: gray;
+}
+
+.modal-header{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.modal-body .row{
+    margin-bottom: 30px;
+}
+
+.flex-row{
+    padding-right: 0px;
+}
+
 .dropdown-item:active{
     color: black;
     background-color: #ecf0f1;
